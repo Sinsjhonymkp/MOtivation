@@ -21,8 +21,7 @@ class MainActivity : AppCompatActivity() {
     fun clickSCHET (view: View){
         var her: EditText = findViewById(R.id.editTextTextPersonName)
        var  herl = her.text.toString()
-        val intent: Intent = Intent(this@MainActivity, VizovActivity::class.java)
-// передача объекта с ключом "hello" и значением "Hello World"
+       val intent: Intent = Intent(this@MainActivity,VizovActivity::class.java)
         intent.putExtra("name", herl)
 // запуск SecondActivity
         startActivity(intent)
